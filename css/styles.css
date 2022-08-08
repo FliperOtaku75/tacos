@@ -1,0 +1,434 @@
+@font-face {
+    font-family: Symply_Olive;
+    src: url(fonts/simply_olive/Simply_Olive.ttf);
+
+    font-family: Organic_Relief;
+    src: url(fonts/organic_relief/Organic_Relief.ttf);
+}
+*{
+    margin:0;
+	padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2.8em;}
+ul{ list-style: none;}
+li{ font-size: 1.0em;}
+
+button{
+    font-size: 1.25em;
+	font-weight: bold;
+	padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(227, 154, 86);
+}
+
+button:hover{
+    background-color: rgb(224, 108, 0);
+}
+
+.menuicon{
+    margin-left: 40%;
+    margin-top: 70%;
+    height: 40px;
+}
+/*menu*/
+.barra{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+}
+
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+
+.barra li{
+    transition: .3s all;
+}
+
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0%;
+    padding: 0%;
+}
+
+.barra h2{
+    font-family: Organic_Relief;
+    text-align: center;
+    color: white;
+    font-size: 0px;
+}
+
+.barra img{
+    padding-top: 0%;
+}
+
+.barra:hover{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(254, 163, 43, 0.833);
+}
+
+.barra:hover h2{
+    padding: 15%;
+    font-size: 200%;
+}
+
+.barra:hover a{
+    font-size: 150%;
+    color: white;
+    display: block;
+    padding: 5%;
+}
+
+.barra:hover img{
+    height: 0;
+    position: absolute;
+
+}
+
+.barra:hover li{
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.barra:hover a:hover{
+    font-size: 70%;
+    padding: 5% 0;
+    background-color: hsla(29, 100%, 29%, 0.973);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(226, 131, 43); }
+
+header{
+    background-color: rgb(216, 216, 216);
+    
+}
+header #logoimg{
+    margin: 0;
+    position: absolute;
+    width: 180px;
+    left: 650px;
+    padding: 3% 0 0 0%;
+}
+header .logo{
+    font-family: Organic_Relief;
+    margin: 0;
+    padding: 25px 100px;
+    font-weight: bold;
+    color: rgb(226, 131, 43);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(226, 119, 43);
+}
+
+#separacion .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tacos2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#quienessomos .container{
+    text-align: center;
+    padding: 110px 12px;
+    height: 200vh;
+}
+#caracteristicas .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 200px 12px;
+    background-color: grey;
+    height: 300vh;
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 40vh;
+}
+
+.final .imagenmenu{
+    height: 1000px;
+}
+.final h2{
+    font-size: 9vw;
+}
+
+.final button{
+    font-size: 5vw;
+}
+/*footer*/
+.filas{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#footer ul{
+	list-style: none;
+}
+#footer{
+	background-color: rgb(30, 30, 30);
+    padding: 30px 0;
+    
+}
+.footercol{
+   width: 25%;
+   padding: 0 15px;
+   text-align: center;
+}
+.footercol h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footercol h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffa723;
+	height: 2px;
+	box-sizing: border-box;
+	width: 300px;
+}
+.footercol ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footercol ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footercol ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footercol .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footercol .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media (min-width: 850px){
+    .barra{
+        position: fixed;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header #logoimg{
+        margin: 0;
+        position: flex;
+        width: 180px;
+        left: 650px;
+        padding: 3% 0 0 0%;
+    }
+    
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #quienessomos .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+
+    #quienessomos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienessomos h2{
+        margin-top: 0px;
+    }
+
+    #quienessomos .img-container{
+        background-image: url("media/tacos1.jpeg");
+        background-size: cover;
+        bottom: 100px;
+        background-position: center center;
+        height: 400px;
+        width: 300px; 
+    }
+
+    #caracteristicas{
+        background-size: initial;
+        background-color: gray;
+    }
+    #caracteristicas .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+    #caracteristicas .video{
+        width:  854px; 
+        height: 480px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+
+    .final h2{
+        font-size: 5em;
+    }
+
+    .final button{
+        font-size: 2em;
+    }
+    
+}
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+@media(max-width: 767px){
+    .footercol{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footercol{
+      width: 100%;
+      
+  }
+  .final .imagenmenu{
+    height: 100px;
+}
+  }
